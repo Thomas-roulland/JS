@@ -1,6 +1,6 @@
-// everythind is calculated from the background color 
-// once the player chose 4 colors, the code compares each background-colors' of the current table row
-// with the 4-colors key to be discovered.
+// tout est calculé à partir de la couleur d'arrière-plan
+// une fois que le joueur a choisi 4 couleurs, le code compare chaque couleur d'arrière-plan de la ligne courante de la table
+// avec la clé 4 couleurs à découvrir.
 $(function(){
 game={ligne:0,col:0,cpt:0,cle:[],result:[0,0],choix:[],ledOn:0,clignL:0,colTab:['rgb(0, 0, 0)','rgb(255, 0, 0)','rgb(0, 255, 0)','rgb(0, 0, 255)','rgb(255, 255, 0)','rgb(255, 0, 255)','rgb(0, 255, 255)','rgb(255, 255, 255)','rgb(255, 125, 0)']
 };
@@ -61,7 +61,7 @@ cssInit('td','.digit','digital.png',0);
 cssInit('td','.submit','digital.png',8);
 cssInit('td','.clear','digital.png',7);
 
-function reset(){ // will light off leds, and restart game
+function reset(){ //relance le jeu
     clearTimeout(clignTO);
     muteClick(1);
     game.cpt=1;
