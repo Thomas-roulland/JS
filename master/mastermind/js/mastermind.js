@@ -170,6 +170,7 @@ function clign(){ //clignottement latérales des leds (type 'calcul-ordi')
     
 }
 function start(){
+    cssInit('td','.message','message.svg',0);
     col('.submit','rgb(80, 0, 0)')
     game.ligne=8;
     game.cpt=1;
